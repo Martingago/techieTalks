@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Techie_talks" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorSecondary">@color/dark_blue</item>
+
+        <item name="android:windowBackground">@color/dark_blue</item> <!-- Fondo en modo oscuro -->
+        <item name="colorOnBackground">@color/white</item>
+
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/dark_blue</item>
+        <item name="colorError">@color/red_error</item>
+        <item name="colorOnError">@color/white</item>
+    </style>
+</resources>

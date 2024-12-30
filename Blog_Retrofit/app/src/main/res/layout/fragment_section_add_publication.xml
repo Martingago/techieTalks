@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SectionLayoutStyle"
+    tools:context=".fragments.SectionAddPublicationFragment">
+
+    <TextView
+        style="@style/TitleTextStyle"
+        android:text="@string/new_post"
+  />
+
+    <!-- FrameLayout para cargar los fragmentos dinámicamente -->
+    <FrameLayout
+        android:id="@+id/contentFragmentContainer"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="top" />
+
+</LinearLayout>

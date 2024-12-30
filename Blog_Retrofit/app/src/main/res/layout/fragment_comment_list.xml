@@ -1,0 +1,53 @@
+<!-- res/layout/fragment_publication_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <!-- MENSAJE SI NO HAY COMENTARIOS-->
+        <TextView
+            android:id="@+id/altMessageNoComments"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="There is no comments"
+            android:visibility="gone"
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCommentsPublication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    <!-- Loading + texto informativo-->
+    <LinearLayout
+        android:id="@+id/layoutLoadingArea"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:indeterminateTint="@color/title_text"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+        <TextView
+            android:textColor="@color/title_text"
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:text="@string/loading_data"
+            />
+    </LinearLayout>
+
+</LinearLayout>

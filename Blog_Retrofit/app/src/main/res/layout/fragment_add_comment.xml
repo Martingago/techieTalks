@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.AddCommentFragment">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/commentLayout"
+        android:elevation="6dp"
+        android:background="@drawable/form_add_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="6dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp">
+        <EditText
+            android:gravity="start"
+            android:id="@+id/commentInput"
+            android:layout_width="0dp"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/light_gray"
+            android:layout_height="68dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8sp"
+            android:hint="@string/comment_hint"/>
+
+        <ImageButton
+            android:id="@+id/commentSubmit"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/add_comment_icon"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Barra de carga y mensaje de validación -->
+    <LinearLayout
+        android:id="@+id/commentLoader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:indeterminateTint="@color/title_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/loadingMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/auth_loading_msg"
+            android:textColor="@color/title_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>

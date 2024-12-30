@@ -1,0 +1,39 @@
+<!-- res/layout/fragment_publication_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRespuestasComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Loading + texto informativo-->
+    <LinearLayout
+        android:id="@+id/layoutLoadingArea"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:indeterminateTint="@color/title_text"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+
+        <TextView
+            android:textColor="@color/title_text"
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:text="@string/loading_data"
+            />
+    </LinearLayout>
+
+</LinearLayout>

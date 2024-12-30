@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+        <LinearLayout
+            android:id="@+id/formAddPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/form_background"
+            android:elevation="6dp"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:hint="@string/post_title"
+                android:inputType="text|textShortMessage"
+                android:padding="16dp"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/light_green"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/spinnerTagSelector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/postContent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:gravity="top"
+                android:hint="@string/post_content"
+                android:inputType="textMultiLine|textLongMessage"
+                android:minLines="12"
+                android:maxLines="100"
+                android:padding="16dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/dark_blue"
+                android:textColorHint="@color/light_green"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addPublicationSuccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/addPublicationError"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/red_error"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
+                android:gravity="center"
+                android:text="@string/save_post"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/loaderAddPublication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateTint="@color/title_text" />
+
+        <TextView
+            android:id="@+id/loadingMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/auth_loading_msg"
+            android:textColor="@color/title_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

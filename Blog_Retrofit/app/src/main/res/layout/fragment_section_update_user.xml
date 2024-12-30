@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SectionLayoutStyle"
+    tools:context=".fragments.SectionUpdateUserFragment">
+
+    <!-- Logotipo de la empresa -->
+    <TextView
+        style="@style/TitleTextStyle"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/sectionInfoText"
+        android:layout_width="match_parent"
+        android:text=""
+        android:layout_height="wrap_content"/>
+
+    <!-- FrameLayout para cargar los fragmentos dinámicamente -->
+    <FrameLayout
+        android:id="@+id/updateUserFragmentContainer"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_gravity="top" />
+
+</LinearLayout>

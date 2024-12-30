@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/nav_home" />
+    </group>
+
+    <item android:title="@string/nav_account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/my_account_icon"
+                    android:title="@string/nav_account" />
+
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="@string/login" />
+
+                <item
+                    android:id="@+id/nav_register"
+                    android:icon="@drawable/register_icon"
+                    android:title="@string/register" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="@string/btn_logout" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/section_editor"
+        android:title="@string/section_post">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_create_post"
+                    android:icon="@drawable/add_post_icon"
+                    android:title="@string/nav_create_post"
+                    />
+                <item
+                    android:id="@+id/nav_table_post"
+                    android:icon="@drawable/handle_list_icon"
+                    android:title="@string/nav_table_post"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/section_admin"
+        android:title="@string/section_admin">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_create_tag"
+                    android:icon="@drawable/tag_icon"
+                    android:title="@string/nav_create_tag"
+                    />
+                <item
+                    android:id="@+id/nav_table_tag"
+                    android:icon="@drawable/handle_list_icon"
+                    android:title="@string/nav_table_tag"
+                    />
+                <item
+                    android:id="@+id/nav_table_user"
+                    android:icon="@drawable/handle_users_icon"
+                    android:title="@string/nav_table_user"/>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/section_options">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/options_icon"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/nav_legal"
+                android:icon="@drawable/legal_icon"
+                android:title="@string/nav_legal">
+
+            </item>
+        </menu>
+    </item>
+</menu>

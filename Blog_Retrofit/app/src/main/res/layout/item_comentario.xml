@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+        app:cardCornerRadius="8dp"
+
+        app:cardBackgroundColor="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/userProfilePic"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:background="@drawable/circle_background"
+            />
+
+        <LinearLayout
+            android:paddingStart="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/userMessageOwner"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="Martin"
+                android:textColor="@color/dark_blue"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/commentMsg"
+                android:layout_width="wrap_content"
+                android:text="Esta es la mejor publicación! Me encanta!"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/btnReplyComment"
+                android:textColor="@color/dark_blue"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:text="Reply"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!-- Contenedor de respuestas -->
+    <FrameLayout
+        android:id="@+id/repliesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <TextView
+            android:id="@+id/loadCommentsButton"
+            android:text="View replies"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textColor="@color/light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <!-- LISTADO DE RESPUESTAS (Fragment list publications)-->
+    <FrameLayout
+        android:id="@+id/listCommentReplies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

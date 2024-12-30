@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sectionIndexFragment">
+
+    <!-- ACTION GENERAL PARA IR AL INDEX DESDE CUALQUIER PARTE -->
+    <action
+        android:id="@+id/action_global_sectionIndexFragment"
+        app:destination="@id/sectionIndexFragment" />
+
+
+    <fragment
+        android:id="@+id/sectionLoginFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionLoginFragment"
+        android:label="fragment_section_login"
+        tools:layout="@layout/fragment_section_login" >
+        <action
+            android:id="@+id/action_sectionLoginFragment_to_sectionRegisterFragment"
+            app:destination="@id/sectionRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionRegisterFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionRegisterFragment"
+        android:label="fragment_section_register"
+        tools:layout="@layout/fragment_section_register" >
+        <action
+            android:id="@+id/action_sectionRegisterFragment_to_sectionLoginFragment"
+            app:destination="@id/sectionLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionIndexFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionIndexFragment"
+        android:label="fragment_section_index"
+        tools:layout="@layout/fragment_section_index" >
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionLoginFragment"
+            app:destination="@id/sectionLoginFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionRegisterFragment"
+            app:destination="@id/sectionRegisterFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionLegalFragment"
+            app:destination="@id/sectionLegalFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionPublicationDetailsFragment"
+            app:destination="@id/sectionPublicationDetailsFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionAddPublicationFragment"
+            app:destination="@id/sectionAddPublicationFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionManagePublicationsFragment"
+            app:destination="@id/sectionManagePublicationsFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionAddTagFragment"
+            app:destination="@id/sectionAddTagFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionManageTagsFragment"
+            app:destination="@id/sectionManageTagsFragment" />
+        <action
+            android:id="@+id/action_sectionIndexFragment_to_sectionManageUsersFragment"
+            app:destination="@id/sectionManageUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionSettingsFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionSettingsFragment"
+        android:label="fragment_section_settings"
+        tools:layout="@layout/fragment_section_settings" >
+        <action
+            android:id="@+id/action_sectionSettingsFragment_to_sectionIndexFragment"
+            app:destination="@id/sectionIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionAccountFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionAccountFragment"
+        android:label="fragment_section_account"
+        tools:layout="@layout/fragment_section_account" >
+        <action
+            android:id="@+id/action_sectionAccountFragment_to_sectionIndexFragment"
+            app:destination="@id/sectionIndexFragment" />
+        <action
+            android:id="@+id/action_sectionAccountFragment_to_sectionUpdateUserFragment"
+            app:destination="@id/sectionUpdateUserFragment" />
+        <action
+            android:id="@+id/action_sectionAccountFragment_to_sectionRegisterFragment"
+            app:destination="@id/sectionRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionLegalFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionLegalFragment"
+        android:label="fragment_section_legal"
+        tools:layout="@layout/fragment_section_legal" >
+        <action
+            android:id="@+id/action_sectionLegalFragment_to_sectionIndexFragment"
+            app:destination="@id/sectionIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionUpdateUserFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionUpdateUserFragment"
+        android:label="fragment_section_update_user"
+        tools:layout="@layout/fragment_section_update_user" >
+        <action
+            android:id="@+id/action_sectionUpdateUserFragment_to_sectionAccountFragment"
+            app:destination="@id/sectionAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionPublicationDetailsFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionPublicationDetailsFragment"
+        android:label="fragment_section_publication_details"
+        tools:layout="@layout/fragment_section_publication_details" >
+        <argument
+            android:name="publicationData"
+            app:argType="com.martingago.blog_retrofit.model.post.PublicacionResponseItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionAddPublicationFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionAddPublicationFragment"
+        android:label="fragment_section_add_publication"
+        tools:layout="@layout/fragment_section_add_publication" />
+    <fragment
+        android:id="@+id/sectionManagePublicationsFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionManagePublicationsFragment"
+        android:label="fragment_section_manage_publications"
+        tools:layout="@layout/fragment_section_manage_publications" >
+        <action
+            android:id="@+id/action_sectionManagePublicationsFragment_to_sectionPublicationDetailsFragment"
+            app:destination="@id/sectionPublicationDetailsFragment" />
+        <action
+            android:id="@+id/action_sectionManagePublicationsFragment_to_sectionEditPublicationFragment"
+            app:destination="@id/sectionEditPublicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionEditPublicationFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionEditPublicationFragment"
+        android:label="fragment_section_edit_publication"
+        tools:layout="@layout/fragment_section_edit_publication" >
+        <argument
+            android:name="publicationData"
+            app:argType="com.martingago.blog_retrofit.model.post.PublicacionResponseItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionAddTagFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionAddTagFragment"
+        android:label="fragment_section_add_tag"
+        tools:layout="@layout/fragment_section_add_tag" />
+    <fragment
+        android:id="@+id/sectionManageTagsFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionManageTagsFragment"
+        android:label="fragment_section_manage_tags"
+        tools:layout="@layout/fragment_section_manage_tags" >
+        <action
+            android:id="@+id/action_sectionManageTagsFragment_to_sectionUpdateTagFragment"
+            app:destination="@id/sectionUpdateTagFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionUpdateTagFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionUpdateTagFragment"
+        android:label="fragment_section_update_tag"
+        tools:layout="@layout/fragment_section_update_tag" >
+        <argument
+            android:name="tagData"
+            app:argType="com.martingago.blog_retrofit.model.tag.TagResponseItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/sectionManageUsersFragment"
+        android:name="com.martingago.blog_retrofit.fragments.SectionManageUsersFragment"
+        android:label="fragment_section_manage_users"
+        tools:layout="@layout/fragment_section_manage_users" >
+        <action
+            android:id="@+id/action_sectionManageUsersFragment_to_updateUserRolesFragment"
+            app:destination="@id/updateUserRolesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateUserRolesFragment"
+        android:name="com.martingago.blog_retrofit.fragments.UpdateUserRolesFragment"
+        android:label="fragment_update_user_roles"
+        tools:layout="@layout/fragment_update_user_roles" >
+        <argument
+            android:name="userData"
+            app:argType="com.martingago.blog_retrofit.model.user.UserResponseItem" />
+        <action
+            android:id="@+id/action_updateUserRolesFragment_to_sectionManageUsersFragment"
+            app:destination="@id/sectionManageUsersFragment" />
+    </fragment>
+</navigation>

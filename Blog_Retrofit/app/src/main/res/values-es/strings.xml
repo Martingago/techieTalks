@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">TechieTalks</string>
+
+    <!-- MENU APP -->
+    <string name="menu">Menú</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_account">Mi Cuenta</string>
+    <string name="nav_login">Iniciar Sesión</string>
+    <string name="nav_register">Registrarse</string>
+    <string name="section_post">Gestionar Publicación</string>
+    <string name="nav_create_post">Crear Publicación</string>
+    <string name="nav_table_post">Gestionar Publicaciones</string>
+    <string name="section_admin">Administración</string>
+    <string name="nav_create_tag">Crear Etiqueta</string>
+    <string name="nav_table_tag">Gestionar Etiquetas</string>
+    <string name="nav_table_user">Gestionar Usuarios</string>
+    <string name="section_options">Configuración y privacidad</string>
+    <string name="nav_settings">Configuración</string>
+    <string name="nav_legal">Términos y Privacidad</string>
+
+    <string name="nav_drawer_open">Abrir navegación</string>
+    <string name="nav_drawer_close">Cerrar navegación</string>
+
+    <!-- CONTENT DESCRIPTION -->
+    <string name="logo_content_description">Imagen logo TechieTalks</string>
+
+    <!-- LOADINGS -->
+    <string name="loading_data_attempt">Cargando datos, intento %1$d de %2$d</string>
+    <string name="loading_credentials_attempt">Validando credenciales, intento %1$d de %2$d</string>
+    <string name="loading_adding_publication">Creando publicación, intento %1$d de %2$d</string>
+    <string name="loading_updating_publication">Actualizando publicación, intento %1$d de %2$d</string>
+    <string name="loading_deleting_publication">Eliminando publicación: %1$s</string>
+    <string name="loading_adding_tag">Creando etiqueta, intento %1$d de %2$d</string>
+    <string name="loading_updating_tag">Actualizando etiqueta, intento %1$d de %2$d</string>
+    <string name="loading_deleting_tag">Eliminando etiqueta: %1$s</string>
+    <string name="loading_deleting_user">Eliminando usuario: %1$s</string>
+    <string name="loading_updating_roles">Actualizando roles, intento %1$d de %2$d</string>
+    <string name="loading_data">Cargando datos...</string>
+
+    <!-- ERRORS -->
+    <string name="unknown_error">Error desconocido al obtener datos</string>
+    <string name="general_error">Mensaje de error general</string>
+    <string name="general_response">Mensaje de respuesta correcta</string>
+    <string name="general_timeout">Tiempo de espera agotado. Sin respuesta del servidor.</string>
+
+    <!-- MY ACCOUNT-->
+    <string name="username_label">Nombre de usuario: %1$s</string>
+    <string name="name_label">Nombre: %1$s</string>
+    <string name="roles_label">Roles: %1$s</string>
+    <string name="btn_delete_profile">Eliminar cuenta</string>
+    <string name="btn_edit_profile">Editar perfil</string>
+    <string name="btn_update_roles_profile">Actualizar roles</string>
+    <!-- LOGIN -->
+    <string name="login">Iniciar Sesión</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="switch_to_register">¿No tienes una cuenta? Crear cuenta</string>
+    <string name="switch_to_login">¿Ya tienes una cuenta? Inicia sesión</string>
+    <string name="auth_loading_msg">Validando credenciales</string>
+    <string name="error_login_credentials">Error, las credenciales de inicio de sesión son inválidas</string>
+    <string name="login_successfully">Inicio de sesión exitoso</string>
+    <string name="btn_logout">Cerrar sesión</string>
+    <!-- REGISTER-->
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="register_user_loading_msg">Creando cuenta, intento %1$d de %2$d</string>
+    <string name="register">Registrarse</string>
+    <string name="accept_terms_use">Acepto los términos de uso.</string>
+    <string name="toast_successfully_register">¡Cuenta registrada exitosamente!</string>
+    <string name="hello_blank_fragment">hola_blank_fragment</string>
+    <!-- REGISTER ERRORS -->
+    <string name="error_empty_username">El nombre de usuario es obligatorio.</string>
+    <string name="error_empty_name">El nombre es obligatorio.</string>
+    <string name="error_empty_password">La contraseña es obligatoria.</string>
+    <string name="error_empty_confirm_password">La confirmación de la contraseña es obligatoria.</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden.</string>
+    <string name="error_terms_unchecked">Debes aceptar los términos de uso.</string>
+    <!-- LOGOUT -->
+    <string name="message_logout_success">Sesión cerrada con éxito.</string>
+
+    <!-- OPTIONS -->
+    <string name="options_title">Menú de opciones</string>
+    <string name="save_preferences">Guardar preferencias</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="select_theme">Seleccionar modo</string>
+    <string-array name="language_options">
+        <item>Por defecto</item>
+        <item>English</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="theme_options">
+        <item>Por defecto</item>
+        <item>Modo claro</item>
+        <item>Modo oscuro</item>
+    </string-array>
+
+    <!-- UPDATING USER DETAILS -->
+    <string name="profile_update_info">Aquí puedes actualizar tus datos de contacto, %1$s. Puedes modificar tu nombre y contraseña.</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="confirm_new_password">Confirmar nueva contraseña</string>
+    <string name="updating_user_loading_msg">Actualizando datos del usuario...</string>
+    <string name="btn_update_user">Actualizar perfil</string>
+    <string name="toast_successfully_updated">Detalles del usuario actualizados con éxito</string>
+
+    <!-- INDEX PAGE -->
+    <string name="title_index">Últimas publicaciones</string>
+    <string name="comments_section">Sección de comentarios</string>
+    <string name="example_publication_text">Lorem ipsum odor amet, consectetuemus viverra hac condimentum purus. Lorem ipsum odor amet, consectetuemus viverra hac</string>
+
+    <!-- COMMENTS -->
+    <string name="loading_comments">Cargando comentarios, intento %1$d de %2$d</string>
+    <string name="updating_comment">Añadiendo nuevo comentario, intento %1$d de %2$d</string>>
+    <string name="load_reply_comments">Cargar %1$d respuestas.</string>
+    <string name="comment_hint">Escribir un comentario...</string>
+    <string name="add_comment">Añadir</string>
+
+    <!-- EDITOR SECTION-->
+    <string name="handle_post">Gestionar todas las publicaciones</string>
+
+    <!-- POST-->
+    <string name="new_post">Añadir nueva publicación</string>
+    <string name="save_post">Guardar Publicación</string>
+    <string name="post_title">Título</string>
+    <string name="post_content">Contenido</string>
+    <string name="delete_publication">Eliminar publicación</string>
+    <string name="message_confirm_delete_publication">¿Estás seguro de que deseas eliminar esta publicación: %1$s?</string>
+    <string name="delete_publication_confirm">La publicación se eliminó con éxito</string>
+    <string name="delete_publication_error">Hubo un problema al eliminar la publicación</string>
+
+    <!-- TAG SELECTOR-->
+    <string name="select_tags">Seleccionar etiquetas</string>
+    <string name="selected_tags">Etiquetas seleccionadas:</string>
+
+    <!-- TAG SECTION -->
+    <string name="handle_tag">Gestionar todas las etiquetas</string>
+    <string name="title_add_tag">Añadir nueva etiqueta</string>
+    <string name="nametag_title">Nombre de la etiqueta</string>
+    <string name="btn_add_tag">Añadir etiqueta</string>
+    <string name="title_update_tag">Actualizar etiqueta</string>
+    <string name="tag_hint">Etiqueta</string>
+
+    <!-- TAG-->
+    <string name="delete_tag">Eliminar etiqueta</string>
+    <string name="success_add_tag">Etiqueta añadida con éxito</string>
+    <string name="updated_tag">Tag actualizada con éxito</string>
+    <string name="message_confirm_delete_tag">¿Estás seguro de que deseas eliminar esta etiqueta: %1$s?</string>
+    <string name="delete_tag_confirm">La etiqueta se eliminó con éxito</string>
+    <string name="delete_tag_error">Hubo un problema al eliminar la etiqueta</string>
+
+    <!-- USERS SECTION-->
+    <string name="handle_user">Gestionar todos los usuarios</string>
+    <string name="delete_user">Eliminar usuario</string>
+    <string name="message_confirm_delete_user">¿Estás seguro de que deseas eliminar este usuario: %1$s?</string>
+    <string name="delete_user_confirm">El usuario se eliminó con éxito</string>
+    <string name="delete_user_error">Hubo un problema al eliminar el usuario</string>
+    <string name="error_loading_users">Error mientras se obtenían los usuarios</string>
+
+    <!-- ROLE SELECTOR -->
+    <string name="select_roles">Seleccionar roles</string>
+
+    <!-- TÉRMINOS Y POLÍTICA DE PRIVACIDAD -->
+    <string name="privacy_text">
+    <![CDATA[
+    <b>Términos de Servicio y Política de Privacidad</b><br/><br/>
+    Fecha de Vigencia: 04/12/2024<br/><br/>
+    <b>1. Términos de Servicio</b><br/>
+    ¡Bienvenido a TechieTalks! Al usar nuestra aplicación, aceptas cumplir con estos términos. Por favor, léelos cuidadosamente.<br/>
+    - Debes tener al menos 13 años para usar esta aplicación.<br/>
+    - Eres responsable de mantener la confidencialidad de la información de tu cuenta.<br/>
+    - Aceptas no usar la aplicación para fines ilegales o no autorizados.<br/><br/>
+    Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuo de la aplicación constituye la aceptación de los términos actualizados.<br/><br/>
+    <b>2. Política de Privacidad</b><br/>
+    TechieTalks respeta tu privacidad y está comprometido con la protección de tus datos personales. Esta política explica cómo recopilamos, usamos y compartimos información.<br/>
+    - <b>Recopilación de Información:</b> Podemos recopilar información personal como tu nombre, dirección de correo electrónico y datos de uso.<br/>
+    - <b>Uso de los Datos:</b> Tus datos se utilizan para proporcionar y mejorar nuestros servicios, personalizar tu experiencia y comunicarnos contigo.<br/>
+    - <b>Compartir con Terceros:</b> No vendemos tus datos personales. Sin embargo, podemos compartirlos con proveedores externos para apoyar la funcionalidad de la aplicación.<br/>
+    - <b>Seguridad de los Datos:</b> Implementamos medidas razonables para proteger tus datos. Sin embargo, ningún método de transmisión por internet es completamente seguro.<br/><br/>
+    <b>3. Derechos del Usuario</b><br/>
+    - Tienes derecho a acceder, actualizar o eliminar tus datos personales.<br/>
+    - Puedes optar por no recibir comunicaciones promocionales.<br/><br/>
+    <b>4. Contáctanos</b><br/>
+    Si tienes preguntas o inquietudes sobre estos términos o nuestra política de privacidad, contáctanos en techietalks@support.es.<br/><br/>
+    Al usar TechieTalks, aceptas estos Términos de Servicio y Política de Privacidad.
+    ]]>
+</string>
+
+
+
+</resources>

@@ -1,0 +1,81 @@
+<!-- fragment_publication.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la publicación -->
+        <TextView
+            android:id="@+id/tituloTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Lorem ipsum"
+            android:textColor="@color/dark_blue"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Contenido de la publicación -->
+        <TextView
+            android:id="@+id/contenidoTextView"
+            android:layout_width="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus metus, auctor in aliquet vel, lacinia et ipsum. Curabitur in feugiat mauris. Vivamus eu metus fringilla, eleifend massa et, cursus nisi. Suspendisse potenti. Aenean vitae molestie mi, et tristique nibh. Quisque in est ultrices, luctus diam eu, tempor massa."
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:ellipsize="end" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <!-- Nombre del creador -->
+            <TextView
+                android:id="@+id/creadorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Martin gago"
+                android:textSize="14sp"
+                android:textColor="@color/green" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <!-- Fecha de creación -->
+            <TextView
+                android:id="@+id/fechaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29/12/1997"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+
+
+        <!-- Tags de la publicación -->
+        <TextView
+            android:id="@+id/tagsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:text="Programación, Ciencia, Desarrollo web"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

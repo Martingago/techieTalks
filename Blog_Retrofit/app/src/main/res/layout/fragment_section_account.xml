@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SectionLayoutStyle"
+    tools:context=".fragments.SectionAccountFragment">
+
+    <TextView
+        android:id="@+id/accountTitle"
+        style="@style/TitleTextStyle"
+        android:text="@string/nav_account" />
+
+    <!-- FICHA DEL USUARIO-->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/userSection"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Título del usuario -->
+            <TextView
+                android:id="@+id/tagUsername"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle_background"
+                android:gravity="center"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                android:text="M"
+
+                android:textColor="@color/dark_blue"
+                android:maxLines="1" />
+
+            <!-- Nombre de usuario (username) -->
+            <TextView
+                android:id="@+id/profileUsername"
+                android:layout_width="match_parent"
+                android:text="Username:"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Nombre de usuario (Name) -->
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:text="Name:"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Nombre de usuario (Name) -->
+            <TextView
+                android:id="@+id/profileRoles"
+                android:layout_width="match_parent"
+                android:text="Roles:"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/dark_blue"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Separador -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="fill_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Btn delete profile -->
+                <Button
+                    android:id="@+id/btnDeleteAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2sp"
+                    android:background="@drawable/main_button"
+                    android:text="@string/btn_delete_profile"
+                    android:textColor="@color/dark_blue"
+                    android:layout_gravity="center" />
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="0dp" />
+
+                <!-- Btn edit profile -->
+                <Button
+                    android:id="@+id/btnNavigateToUpdateUser"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2sp"
+                    android:background="@drawable/main_button"
+                    android:text="@string/btn_edit_profile"
+                    android:textColor="@color/dark_blue"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Barra de carga y mensaje de validación -->
+    <LinearLayout
+        android:id="@+id/loaderSection"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:indeterminateTint="@color/green"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/loadingMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/loading_deleting_user"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentLogoutUser"
+        android:layout_weight="0.4"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
