@@ -9,7 +9,7 @@ Toda la información y datos de la aplicación se gestionan a través de un serv
 
 ## Instalación / Puesta en marcha
 
-La aplicación de [`TechieTalks`](/project/Blog_Retrofit/) se conecta al servicio proporcionado por el [`SERVIDOR API REST`](/project/API_REST_BLOG/), es por ello que para utilizar la aplicación en un dispositivo móvil simplemente nos bastará con descargar e instalar la [`APK`](/project/APK/) en nuestro dispositivo movil. Para el correcto funcionamiento de la aplicación se requiere de conexión a internet.
+La aplicación de [`TechieTalks`](/Blog_Retrofit/) se conecta al servicio proporcionado por el [`SERVIDOR API REST`](https://github.com/Martingago/BlogSpring), es por ello que para utilizar la aplicación en un dispositivo móvil simplemente nos bastará con descargar e instalar la [`APK`](/APK/) en nuestro dispositivo movil. Para el correcto funcionamiento de la aplicación se requiere de conexión a internet.
 Si nunca hemos instalado una APK en nuestro dispositivo movil, va a ser necesario que previamente sigamos una serie de pasos para que nuestro dispositivo nos permita descargar y ejecutar código de terceros, en nuestro caso una APK.
 
 ### Pasos para configurar un teléfono para instalar/ejecutar APKs
@@ -17,8 +17,8 @@ Si nunca hemos instalado una APK en nuestro dispositivo movil, va a ser necesari
 Si nunca has instalado una APK en tu dispositivo móvil, sigue estos pasos para permitir la descarga y ejecución de aplicaciones de terceros:
 
 1. **Descarga la APK en tu dispositivo móvil**: Puedes descargar la APK de dos formas diferentes: 
-    - Conectando tu dispositivo al ordenador a través de un cable USB y transfiriendo el archivo [`APK`](/project/APK/) a tu gestor de archivos.
-    - Desde tu propio dispositivo movil descarga este [`fichero APK`](/project/APK/).
+    - Conectando tu dispositivo al ordenador a través de un cable USB y transfiriendo el archivo [`APK`](/APK/) a tu gestor de archivos.
+    - Desde tu propio dispositivo movil descarga este [`fichero APK`](/APK/).
 
 2. **Permitir la instalación de aplicaciones de orígenes desconocidos**:
     - Android 8.0 y superior:
@@ -48,7 +48,7 @@ Siguiendo estos pasos, habrás configurado tu dispositivo para permitir la insta
 
 ## Uso
 
-Este proyecto consiste en una aplicación fullstack que incluye un [**servidor API REST**](/project/API_REST_BLOG/) y una [**aplicación móvil intuitiva**](/project/Blog_Retrofit/). A continuación, se describe brevemente cómo interactúa cada componente:
+Este proyecto consiste en una aplicación fullstack que incluye un [**servidor API REST**](https://github.com/Martingago/BlogSpring) y una [**aplicación móvil intuitiva**](/Blog_Retrofit). A continuación, se describe brevemente cómo interactúa cada componente:
 
 **Servidor API REST**
 El servidor API REST gestiona las peticiones realizadas por los usuarios a través de la aplicación móvil. Sus principales funcionalidades incluyen:
@@ -91,14 +91,6 @@ Este proyecto está licenciado bajo la [GNU Free Documentation License Version 1
 - **Texto de la Licencia**: Se debe proporcionar una copia del texto de la licencia junto con cualquier distribución del proyecto, ya sea en su forma original o modificada.
 
 Para más detalles, consulta el archivo [LICENSE](/LICENSE.md) en la raíz del repositorio.
-
-## Índice
-
-1. Anteproyecto
-    * 1.1. [Idea](doc/templates/1_idea.md)
-2. [Diseño](doc/templates/5_deseño.md)
-3. [Implantación](doc/templates/6_implantacion.md)
-
 
 ## Guía de contribución
 
